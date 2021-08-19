@@ -1,0 +1,164 @@
+body {
+  font-family: "IBM Plex Mono", monospace;
+  background: linear-gradient(to top, #09203f 0%, #537895 100%);
+  background: linear-gradient(
+    109.6deg,
+    rgb(177, 173, 219) 11.2%,
+    rgb(245, 226, 226) 91.1%
+  );
+}
+h1 {
+  font-size: 20px;
+  color: #453953;
+  position: relative;
+  left: -80px;
+  background: linear-gradient(
+    180.3deg,
+    rgb(221, 221, 221) 5.5%,
+    rgb(110, 136, 161) 90.2%
+  );
+  background: linear-gradient(
+    109.6deg,
+    rgb(177, 173, 219) 11.2%,
+    rgb(245, 226, 226) 91.1%
+  );
+}
+h2 {
+  font-size: 65px;
+  color: #fff;
+  position: relative;
+  top: -180px;
+  left: 40px;
+}
+hr {
+  position: relative;
+  bottom: 150px;
+}
+.current-temp {
+  font-size: 90px;
+  font-weight: bold;
+  color: #fff;
+  position: relative;
+  top: -180px;
+  left: 40px;
+}
+.boston-emoji {
+  font-size: 150px;
+  color: #708aa2;
+  position: relative;
+  top: -200px;
+  left: 40px;
+}
+.prov:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.fall-river:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.newport:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.card {
+  position: relative;
+  left: 350px;
+  top: 50px;
+  border-radius: 8px;
+  border: 1px solid #453953;
+  background: linear-gradient(
+    180.3deg,
+    rgb(221, 221, 221) 5.5%,
+    rgb(110, 136, 161) 90.2%
+  );
+}
+
+.weekdays {
+  font-size: 17px;
+  color: #fff;
+  position: relative;
+  bottom: 60px;
+  left: 10px;
+  text-align: center;
+}
+.week-emojis {
+  font-size: 40px;
+  position: relative;
+  bottom: 60px;
+  left: 10px;
+  text-align: center;
+  color: #708aa2;
+}
+.week-temp {
+  font-size: 15px;
+  color: #fff;
+  position: relative;
+  bottom: 60px;
+  left: 10px;
+  text-align: center;
+}
+
+.fa-caret-up {
+  text-align: center;
+  color: red;
+  position: relative;
+  bottom: 60px;
+  left: 37px;
+}
+.fa-caret-down {
+  text-align: center;
+  color: blue;
+  position: relative;
+  bottom: 60px;
+  left: 55px;
+  text-align: center;
+}
+.button {
+  color: #ffff;
+  background-color: #453953;
+  position: relative;
+  left: -12px;
+  top: 5px;
+  font-size: 17px;
+  border-radius: 4px;
+}
+.currentBtn {
+  color: #fff;
+  background-color: #453953;
+  position: relative;
+  left: 340px;
+  top: 5px;
+  font-size: 17px;
+  border-radius: 4px;
+  border-color: #453953;
+}
+.button:hover {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #453953;
+}
+.currentBtn:hover {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #453953;
+}
+
+.search-engine {
+  position: relative;
+  left: 300px;
+}
+
+.temp-units {
+  position: relative;
+  color: blue;
+  font-weight: lighter;
+  font-size: 20px;
+  right: 45px;
+  top: -35px;
+}
+#fahrenheit-link {
+  text-decoration: none;
+}
