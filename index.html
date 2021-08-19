@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/df00fa89e1.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="src/style.css"> 
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div class="container">
+<h1 class=" border p-1 m-4 rounded shadow">
+<div class="row popular-cities">
+  <div class="col-4 prov" id="Prov"> Providence </div>
+  <div class="col-4 fall-river" id="Fall-River"> Fall River </div>
+  <div class="col-4 newport" id="Newport"> Newport </div>
+  </div>
+</h1>
+
+  <form id="search-form">
+    <div class="row search-engine">
+      <div class="col">
+    <input type="text" placeholder="Enter city here 🔍" class="form-control"class="enter-city" id="city-input">
+    </div>
+    <div class="col">
+    <input type="submit" value="Search" class="button"> 
+    </div>
+    <div>
+      <button class="currentBtn" id="current-location-button">
+     Current
+     </button>
+    </div>
+     </div>
+  </form>
+
+<div class="card" style="width: 20rem;">
+  <div class="card-body">
+    <h5 class="card-title" id="current-time">
+    </h5>
+    <h6 class="card-subtitle mb-2 text-muted"> <strong id="high"></strong>°/<small id="low"></small>°</h6>
+    <p class="card-text"> 
+      <div>Feels like: <strong id="real-feel"></strong>°F</div>
+      <div> Humidity: <strong id="humidity"></strong>%</div>
+      <div> Description: <strong id="description"></strong></div>
+      <div>Wind: <strong id="wind-speed"></strong>km/hr</div>
+    </p>
+  </div>
+</div>
+
+<section>
+   <h2 id="city"> </h2>
+  <div class="current-temp">
+    <span id="temperature">77</span>
+    
+    <span class= "temp-units"> <span>°F</span>
+
+    </span>
+  </div>
+  <i class= "boston-emoji">🌥</i>
+</section>
+<hr/>
+<div class="row weekdays">
+  <div class="col-2">Mon </div>
+  <div class="col-2">Tues</div>
+  <div class="col-2">Wed </div>
+  <div class="col-2">Thurs </div>
+  <div class="col-2">Fri </div>
+  <div class="col-2">Sat </div>
+</div>
+
+<div class="row week-emojis">
+  <div class="col-2"> <span> ⛅️</span></div>
+  <div class="col-2"> <span> 🌦</span></div>
+  <div class="col-2"> <span> 🌧</span></div>
+  <div class="col-2"> <span> ⛈</span></div>
+  <div class="col-2"> <span> ☀️</span> </div>
+  <div class="col-2"> <span> ☀️</span> </div>
+</div>
+
+<div class="row week-temp">
+  <div class="col-2"> 68° 45°</div>
+  <div class="col-2"> 71° 55°</div>
+  <div class="col-2"> 78° 54°</div>
+  <div class="col-2"> 80° 60°</div>
+  <div class="col-2"> 82° 63°</div>
+  <div class="col-2"> 81° 60°</div>
+</div>
+
+<div class="row">
+  <div class="col-2"> <i class="fas fa-caret-up"></i>  <i class="fas fa-caret-down"></i></div>
+  <div class="col-2"> <i class="fas fa-caret-up"></i> <i class="fas fa-caret-down"></i></div>
+  <div class="col-2"> <i class="fas fa-caret-up"></i> <i class="fas fa-caret-down"></i></div>
+  <div class="col-2"> <i class="fas fa-caret-up"></i> <i class="fas fa-caret-down"></i></div>
+  <div class="col-2"> <i class="fas fa-caret-up"></i> <i class="fas fa-caret-down"></i></div>
+  <div class="col-2"> <i class="fas fa-caret-up"></i> <i class="fas fa-caret-down"></i></div>
+</div>
+
+</div>
+<script src="src/index.js"></script>
+</body>
+</html>
